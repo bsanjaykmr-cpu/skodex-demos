@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c3d34" />
+    <title>MAHIRA | Curated Saree Edit</title>
+    <meta name="description" content="A polished collection preview for MAHIRA." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="notice">Private collection preview · New festive pieces now in</div>
+    <header class="header">
+      <button class="menu" aria-label="Open menu">☰</button>
+      <a class="brand" href="#top">MAHIRA<span>THE SAREE EDIT</span></a>
+      <div class="header-icons" aria-hidden="true">♡ &nbsp; 🛍</div>
+    </header>
+    <div class="search" aria-hidden="true">⌕&nbsp;&nbsp; Search the collection</div>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-image"><img src="assets/IMG-20261116-WA0210.jpg" alt="MAHIRA green mango saree" /><span class="hero-label">NEW FESTIVE EDIT</span></div>
+        <div class="hero-copy">
+          <p class="eyebrow">THE MAHIRA COLLECTION</p>
+          <h1>Tradition, made <em>memorable.</em></h1>
+          <p>Statement sarees selected for celebrations, gifting and every beautiful occasion in between.</p>
+          <a class="primary" href="#arrivals">Explore new arrivals <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="trust">
+        <div><span>✦</span>Curated<br />collections</div><div><span>✦</span>Premium<br />weaves</div><div><span>✦</span>Latest<br />catalogue</div><div><span>✦</span>Easy<br />enquiry</div>
+      </section>
+
+      <section class="section intro" id="collections">
+        <div class="section-mark">✦</div>
+        <p class="eyebrow">SHOP BY MOOD</p><div class="heading-row"><h2>Find your perfect <em>drape.</em></h2><a href="#arrivals">View all ↗</a></div>
+        <p class="subcopy">From festive silk to expressive printed weaves, every collection has its own story.</p>
+      </section>
+
+      <section class="collections">
+        <a class="tile tile-one" href="#arrivals" data-filter-link="silk"><img src="assets/IMG-20261116-WA0157.jpg" alt="Vintage soft silk pattu" /><span><small>THE TRADITIONAL EDIT</small><b>Soft Silk Pattu</b><i>Explore →</i></span></a>
+        <a class="tile tile-two" href="#arrivals" data-filter-link="mango"><img src="assets/IMG-20261116-WA0183.jpg" alt="Mango saree" /><span><small>THE FESTIVE EDIT</small><b>Mango Weaves</b><i>Explore →</i></span></a>
+        <a class="tile tile-wide" href="#arrivals" data-filter-link="tussar"><img src="assets/IMG-20261116-WA0147.jpg" alt="Tussar silk saree" /><span><small>THE PREMIUM EDIT</small><b>Tussar Stories</b><i>Explore →</i></span></a>
+      </section>
+
+      <section class="section arrivals" id="arrivals">
+        <div class="section-mark">✦</div>
+        <div class="heading-row"><div><p class="eyebrow">JUST DROPPED</p><h2>New arrivals</h2></div><a href="#arrivals">View all ↗</a></div>
+        <div class="filters" role="group" aria-label="Filter collection"><button class="active" data-filter="all">All styles</button><button data-filter="silk">Soft silk</button><button data-filter="mango">Mango</button><button data-filter="tussar">Tussar</button><button data-filter="moonga">Moonga</button></div>
+        <div class="products" id="products"></div>
+      </section>
+
+      <section class="story">
+        <div class="section-mark">✦</div>
+        <img src="assets/IMG-20261116-WA0134.jpg" alt="Semi Gadwal silk saree" />
+        <div><p class="eyebrow">THE DETAIL IS THE DESIGN</p><h2>Wear a little <em>artistry.</em></h2><p>Fine weaving, rich borders and thoughtful colour — a collection made to stand out at every celebration.</p><a class="primary" href="#arrivals">Browse the edit <span>↓</span></a></div>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top">MAHIRA<span>THE SAREE EDIT</span></a><p>Private collection preview · Product photographs and catalogue details supplied by MAHIRA.<br /><strong>Developed by SKODEX</strong></p><a href="#top">Back to top ↑</a></footer>
+    <dialog id="product-dialog"><button class="close" aria-label="Close">×</button><div id="dialog-content"></div></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
