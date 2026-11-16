@@ -15,7 +15,7 @@
     <div class="notice">Private collection preview · New festive pieces now in</div>
     <header class="header">
       <button class="menu" aria-label="Open menu">☰</button>
-      <a class="brand" href="#top">MAHIRA<span>THE SAREE EDIT</span></a>
+      <a class="brand" href="#top" aria-label="MAHIRA home"><img src="assets/mahira-logo.png" alt="" /><span>THE SAREE EDIT</span></a>
       <div class="header-icons" aria-hidden="true">♡ &nbsp; 🛍</div>
     </header>
     <div class="search" aria-hidden="true">⌕&nbsp;&nbsp; Search the collection</div>
@@ -24,6 +24,7 @@
       <section class="hero">
         <div class="hero-image"><img src="assets/IMG-20261116-WA0210.jpg" alt="MAHIRA green mango saree" /><span class="hero-label">NEW FESTIVE EDIT</span></div>
         <div class="hero-copy">
+          <img class="hero-crest" src="assets/mahira-logo.png" alt="MAHIRA emblem" />
           <p class="eyebrow">THE MAHIRA COLLECTION</p>
           <h1>Tradition, made <em>memorable.</em></h1>
           <p>Statement sarees selected for celebrations, gifting and every beautiful occasion in between.</p>
@@ -47,21 +48,32 @@
         <a class="tile tile-wide" href="#arrivals" data-filter-link="tussar"><img src="assets/IMG-20261116-WA0147.jpg" alt="Tussar silk saree" /><span><small>THE PREMIUM EDIT</small><b>Tussar Stories</b><i>Explore →</i></span></a>
       </section>
 
-      <section class="section arrivals" id="arrivals">
+      <section class="section arrivals" id="arrivals" data-reveal>
         <div class="section-mark">✦</div>
         <div class="heading-row"><div><p class="eyebrow">JUST DROPPED</p><h2>New arrivals</h2></div><a href="#arrivals">View all ↗</a></div>
         <div class="filters" role="group" aria-label="Filter collection"><button class="active" data-filter="all">All styles</button><button data-filter="silk">Soft silk</button><button data-filter="mango">Mango</button><button data-filter="tussar">Tussar</button><button data-filter="moonga">Moonga</button></div>
         <div class="products" id="products"></div>
       </section>
 
-      <section class="story">
+      <section class="videos" id="videos" data-reveal>
+        <div class="section-mark">✦</div>
+        <div class="heading-row"><div><p class="eyebrow">WATCH THE DRAPE</p><h2>See it in <em>motion.</em></h2></div><p class="video-note">Tap to play the latest catalogue videos.</p></div>
+        <div class="reel-grid">
+          <article class="reel"><video controls playsinline preload="metadata" poster="assets/IMG-20261116-WA0134.jpg"><source src="assets/VID-20261116-WA0142.mp4" type="video/mp4" /></video><div><span>SEMI GADWAL SILK</span><b>Texture &amp; pallu detail</b></div></article>
+          <article class="reel"><video controls playsinline preload="metadata" poster="assets/IMG-20261116-WA0147.jpg"><source src="assets/VID-20261116-WA0150.mp4" type="video/mp4" /></video><div><span>PREMIUM TUSSAR</span><b>Nature inspired weave</b></div></article>
+          <article class="reel"><video controls playsinline preload="metadata" poster="assets/IMG-20261116-WA0157.jpg"><source src="assets/VID-20261116-WA0161.mp4" type="video/mp4" /></video><div><span>SOFT SILK PATTU</span><b>Grand festive fall</b></div></article>
+          <article class="reel"><video controls playsinline preload="metadata" poster="assets/IMG-20261116-WA0183.jpg"><source src="assets/VID-20261116-WA0190.mp4" type="video/mp4" /></video><div><span>RW MANGO SAREE</span><b>Border &amp; blouse close-up</b></div></article>
+        </div>
+      </section>
+
+      <section class="story" data-reveal>
         <div class="section-mark">✦</div>
         <img src="assets/IMG-20261116-WA0134.jpg" alt="Semi Gadwal silk saree" />
         <div><p class="eyebrow">THE DETAIL IS THE DESIGN</p><h2>Wear a little <em>artistry.</em></h2><p>Fine weaving, rich borders and thoughtful colour — a collection made to stand out at every celebration.</p><a class="primary" href="#arrivals">Browse the edit <span>↓</span></a></div>
       </section>
     </main>
 
-    <footer><a class="brand" href="#top">MAHIRA<span>THE SAREE EDIT</span></a><p>Private collection preview · Product photographs and catalogue details supplied by MAHIRA.<br /><strong>Developed by SKODEX</strong></p><a href="#top">Back to top ↑</a></footer>
+    <footer><a class="brand" href="#top" aria-label="MAHIRA home"><img src="assets/mahira-logo.png" alt="" /><span>THE SAREE EDIT</span></a><p>Private collection preview · Product photographs and catalogue details supplied by MAHIRA.<br /><strong>Developed by SKODEX</strong></p><a href="#top">Back to top ↑</a></footer>
     <dialog id="product-dialog"><button class="close" aria-label="Close">×</button><div id="dialog-content"></div></dialog>
     <script src="app.js"></script>
   </body>
