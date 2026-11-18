@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Pranavi Trendy Queen's Choice — premium saree catalogue preview.">
+  <title>Pranavi — Trendy Queen's Choice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span>✦</span> LATEST SAREE EDIT · 18 NOVEMBER 2026 <span>✦</span> CATALOGUE PREVIEW</div>
+  <header class="site-header">
+    <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <a class="brand" href="#home" aria-label="Pranavi home"><img src="assets/pranavi-logo-web.png" alt="Pranavi Trendy Queen's Choice"></a>
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#collections">Collections</a><a href="#arrivals">New arrivals</a><a href="#drape">Watch the drape</a><a href="#story">Our edit</a>
+    </nav>
+    <div class="actions">
+      <button id="search-toggle" aria-label="Search catalogue">⌕</button>
+      <button id="saved-toggle" aria-label="Show saved pieces">♡<i id="saved-count">0</i></button>
+      <button id="catalogue-info" aria-label="Catalogue information">◫</button>
+    </div>
+  </header>
+  <div class="search-panel" hidden><label for="search">Find your weave</label><input id="search" type="search" placeholder="Search by collection, fabric or detail…"><button id="search-close" aria-label="Close search">×</button></div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-image"><img src="assets/IMG-20261118-WA0006.jpg" alt="Benaras Kanchi Pattu saree from Pranavi"><span class="hero-index">NEW / 01</span></div>
+      <div class="hero-copy">
+        <div class="logo-aura"><img src="assets/pranavi-logo-web.png" alt=""></div>
+        <p class="eyebrow">PRANAVI · TRENDY QUEEN'S CHOICE</p>
+        <h1>Woven to be<br><em>remembered.</em></h1>
+        <p>Fresh Benaras Kanchi, Patola and silk edits—selected from the latest Pranavi catalogue for festive dressing and elegant occasions.</p>
+        <a class="primary" href="#arrivals">Explore new arrivals <span>↗</span></a>
+        <div class="hero-meta"><span>LATEST CATALOGUE</span><span>ONLINE PREVIEW</span></div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Catalogue highlights">
+      <div><b>✦</b><span>Latest Edit<small>New catalogue selections</small></span></div>
+      <div><b>◈</b><span>Weave Details<small>Border, pallu & blouse notes</small></span></div>
+      <div><b>▷</b><span>Drape Films<small>See texture in motion</small></span></div>
+      <div><b>♡</b><span>Your Edit<small>Save the pieces you love</small></span></div>
+    </section>
+
+    <section class="section wrap" id="collections">
+      <div class="section-heading reveal"><div><p class="eyebrow">SHOP BY COLLECTION</p><h2>Four signatures.<br>One regal mood.</h2></div><a href="#arrivals">View all ↗</a></div>
+      <div class="collection-grid" id="collection-grid"></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>PRANAVI <i>◆</i> BENARAS KANCHI <i>◆</i> MANGALAGIRI SILK <i>◆</i> MYSORE SILK <i>◆</i> SOFT SILK PATOLA <i>◆</i> PRANAVI <i>◆</i> BENARAS KANCHI <i>◆</i> MANGALAGIRI SILK <i>◆</i></div></div>
+
+    <section class="section wrap" id="arrivals">
+      <div class="section-heading arrivals-heading reveal"><div><p class="eyebrow">NEW ARRIVALS</p><h2>The latest Pranavi edit.</h2><p>Tap any piece for border, pallu, blouse and catalogue details.</p></div><span id="result-count"></span></div>
+      <div class="filters" id="filters" aria-label="Filter collections"></div>
+      <p class="price-note">Catalogue prices are shown as supplied. Current availability and any additional charges are to be confirmed.</p>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="drape" id="drape">
+      <div class="wrap">
+        <div class="section-heading light reveal"><div><p class="eyebrow">WATCH THE DRAPE</p><h2>Every weave<br>moves differently.</h2></div><p>Press play to see the fall, finish and detailing of selected pieces from the supplied Pranavi catalogue.</p></div>
+        <div class="video-grid">
+          <article><video controls playsinline preload="metadata" poster="assets/IMG-20261118-WA0005.jpg"><source src="assets/benaras-kanchi.mp4" type="video/mp4"></video><div><b>01</b><h3>Benaras Kanchi Pattu</h3><span>Madrasi checks · Benarasi gap border</span></div></article>
+          <article><video controls playsinline preload="metadata" poster="assets/IMG-20261118-WA0011.jpg"><source src="assets/mangalagiri-silk.mp4" type="video/mp4"></video><div><b>02</b><h3>Mangalagiri Silk</h3><span>Patola boxes · Elephant Kanchi border</span></div></article>
+          <article><video controls playsinline preload="metadata" poster="assets/IMG-20261118-WA0017.jpg"><source src="assets/mysore-silk.mp4" type="video/mp4"></video><div><b>03</b><h3>Mysore Silk</h3><span>Madrasi checks · Jungle-theme border</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section wrap" id="story">
+      <div class="story-images reveal"><img src="assets/IMG-20261118-WA0024.jpg" alt="Soft Silk Patola saree pallu"><img src="assets/IMG-20261118-WA0016.jpg" alt="Mysore Silk saree detail"></div>
+      <div class="story-copy reveal"><p class="eyebrow">THE PRANAVI EDIT</p><h2>Colour in every box.<br>Craft in every border.</h2><p>The latest catalogue moves from Patola-in-box patterns and elephant Kanchi borders to Madrasi checks, Muniya Paithani details and grand woven pallus.</p><p>Every displayed product image, description and price is taken from the supplied Pranavi catalogue.</p><a class="primary" href="#arrivals">Discover the collection <span>↗</span></a></div>
+    </section>
+
+    <section class="finale"><div class="mini-logo"><img src="assets/pranavi-logo-web.png" alt="Pranavi"></div><p class="eyebrow">TRENDY QUEEN'S CHOICE</p><h2>Your next statement saree<br>may be one scroll away.</h2><a href="#arrivals">Explore new arrivals ↗</a></section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <a class="footer-brand" href="#home"><img src="assets/pranavi-logo-web.png" alt="Pranavi Trendy Queen's Choice"></a>
+      <div><h3>Discover</h3><a href="#collections">Collections</a><a href="#arrivals">New arrivals</a><a href="#drape">Drape films</a></div>
+      <div><h3>Catalogue</h3><button id="footer-saved">Saved pieces</button><a href="#story">Weave details</a><p>Demo catalogue · Online checkout unavailable</p></div>
+    </div>
+    <div class="wrap footer-bottom"><span>Pranavi catalogue preview</span><a href="https://skodex.in" target="_blank" rel="noopener">Developed by SKODEX</a></div>
+  </footer>
+
+  <dialog id="modal"><button class="modal-close" aria-label="Close details">×</button><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
